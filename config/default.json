@@ -1,0 +1,48 @@
+{
+  "dbConfig": {
+    "NODE_PORT": 8080,
+    "MONGO_DB_URL": "mongodb://localhost:27017/nachitrotrace",
+    "BASE_URL": "http://35.207.169.147",
+    "USER_EMAIL": "nachi.namjoshi@gmail.com",
+    "USER_PASSWORD": "lTgAYaLP9jRs",
+    "TOKEN_KEY": ""
+  },
+
+  "ErrorConstants": {
+    "SERVER_ERROR": "Internal Server Error!",
+    "DATABASE_CONNECTIION_ERROR": "Error connecting to database!",
+    "TOKEN_ERROR": "Error getting token",
+    "GET_RACE_EVENTS_ERROR": "Error getting race events",
+    "SAVE_RACE_EVENTS_ERROR": "Error saving race events",
+    "USER_AUTHENTICATION_ERROR": "Error getting token in user authentication",
+    "API_CALL_ERROR": "Error in calling API",
+    "UNAUTHORIZED": "Invalid Credentials",
+    "NO_CONTENT": "Server is busy. Wait and try again.",
+    "TOKEN_MISSING": "Authentication token is missing, or does not match an active session",
+    "TIME_OUT": "Request timed out while waiting for new events"
+  },
+
+  "SuccessConstants": {
+    "SUCCESSFUL_REQUEST": "Successful request",
+    "SERVER_CONNECTED": "Connected to the app on port",
+    "DATABASE_CONNECTED": "Connected to the database",
+    "SUCCESSFUL_AUTHENTICATION": "SUCCESSFUL AUTHENTICATION"
+  },
+
+  "HEADERS": {
+    "Content-Type": "application/json"
+  },
+
+  "ENDPOINTS": {
+    "AUTH": "/auth",
+    "RESULT": "/results"
+  },
+
+  "logConfig": {
+    "logFolder": "./logs/",
+    "logFile": "error.log",
+    "logFileLevel": "error"
+  },
+
+  "NODE_ENV": "development"
+}

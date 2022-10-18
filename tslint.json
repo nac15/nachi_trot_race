@@ -1,0 +1,12 @@
+{
+  "defaultSeverity": "warn",
+  "extends": ["tslint:recommended", "tslint-config-prettier"],
+  "jsRules": {},
+  "rules": {
+    "no-console": [true],
+    "prefer-const": [true],
+    "spaced-comment": [false],
+    "semicolor": [true]
+  },
+  "rulesDirectory": []
+}
