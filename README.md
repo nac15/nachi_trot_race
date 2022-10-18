@@ -1,4 +1,4 @@
-## Trot race by polling by Nachi
+## Trot race polling by Nachi
 
 This repository contains the code for the trot race polling by Nachi.
 
