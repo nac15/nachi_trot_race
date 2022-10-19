@@ -1,5 +1,5 @@
 import mongoose from 'mongoose'
-import Logger from './Logger'
+import Logger from '../utils/Logger'
 const config = require('config')
 const dbConfig = config.get('dbConfig')
 const ErrorConstants = config.get('ErrorConstants')

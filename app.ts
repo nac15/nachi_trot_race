@@ -1,5 +1,5 @@
 import express, { Express } from 'express'
-import Database from './src/utils/Database'
+import Database from './src/database/Database'
 import Race from './src/services/Race'
 import Logger from './src/utils/Logger'
 const config = require('config')

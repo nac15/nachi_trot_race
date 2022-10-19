@@ -1,4 +1,4 @@
-import Database from '../src/utils/Database'
+import Database from '../src/database/Database'
 import IHorseData from '../src/interfaces/IHorseData'
 import { TrotEvent } from '../src/models/TrotEvent'
 
