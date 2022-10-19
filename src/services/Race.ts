@@ -44,7 +44,7 @@ class Race {
     await Event.getRaceEvents()
       .then(async (events: any) => {
         if (events?.status === StatusCodes.OK) {
-          // save race events
+          // save race event into db and check for the next one
           if (events?.data != '') await Event.saveRaceEvents(events.data)
           this.startTrotRace()
           Logger.info(SuccessConstants.SUCCESSFUL_REQUEST, StatusCodes.OK)
@@ -53,11 +53,11 @@ class Race {
           this.initiateRace()
           Logger.error(ErrorConstants.TOKEN_MISSING, StatusCodes.UNAUTHORIZED)
         } else if (events?.status === StatusCodes.NO_CONTENT) {
-          // In case of no data and 204 , check for events after event delay
+          // In case of no data and status 204 , recheck for events
           Logger.error(
             ErrorConstants.TIME_OUT + 'error code : ' + StatusCodes.NO_CONTENT
           )
-          Logger.info('Requesting once again : ')
+          Logger.info('creating new request for the events')
           this.startTrotRace()
         }
       })
